@@ -41,6 +41,7 @@ include("engine.php");
       {
           while($rows=mysqli_fetch_assoc($result)){
           
+
        ?>
         <div class="card">
   <img src="../images/avatar.png" alt="John" style="height:200px; width: 100%">
@@ -760,7 +761,7 @@ include("engine.php");
         url: "your-php-code-url-to-save-in-database",
         dataType: 'json',
         type: 'POST',
-        data:{ lat: lat, lng: lngg }
+        data:{ lat: lat, lng: lngg },
         success: function(data)
         {                
            //check here whether inserted or not 
