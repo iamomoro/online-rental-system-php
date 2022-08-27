@@ -1,16 +1,17 @@
-<?php 
+<?php
 session_start();
-if(isset($_SESSION["email"])){
+if (isset($_SESSION["email"])) {
   header("location:index.php");
 }
 
 include("navbar.php");
 include("tenant-engine.php");
 
- ?>
+?>
 
 <div class="container">
-  <h3 style="font-weight: bold; text-align: center;">Tenant Login</h3><hr><br><br>
+  <h3 style="font-weight: bold; text-align: center;">Tenant Login</h3>
+  <hr><br><br>
   <form method="POST">
     <div class="form-group">
       <label for="email">Email:</label>
@@ -21,7 +22,7 @@ include("tenant-engine.php");
       <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
     </div>
     <div class="form-group">
-      <a href="forgot-password-owner.php">Lost your Password ? </a> 
+      <a href="forgot-password-owner.php">Lost your Password ? </a>
     </div>
     <center><input type="submit" id="submit" name="tenant_login" class="btn btn-primary btn-block" value="Login"></center>
   </form>
