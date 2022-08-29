@@ -137,7 +137,7 @@ include('booking-engine.php');
             </tr>
             <tr>
               <td><h3>Estimated Price:</h3></td>
-              <td><h4>Rs.<?php echo $rows['estimated_price']; ?></h4></td>
+              <td><h4>Ksh.<?php echo $rows['estimated_price']; ?></h4></td>
             </tr>
           </table>
         </div>
